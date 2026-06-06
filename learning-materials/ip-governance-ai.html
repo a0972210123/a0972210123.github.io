@@ -250,6 +250,7 @@
     .quiz-options li.correct { background: rgba(16,185,129,.35); border-color: #6ee7b7; }
     .quiz-options li.wrong { background: rgba(239,68,68,.35); border-color: #fca5a5; }
     .quiz-feedback { margin-top: 12px; font-size: .88rem; opacity: .9; display: none; }
+    .quiz-wrong-fb { color: #fca5a5; }
 
     /* ── KEY TERMS ── */
     .glossary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
@@ -873,7 +874,8 @@
         <li onclick="answer(this,'q1',true)">C. 收益法（Income Approach）</li>
         <li onclick="answer(this,'q1',false)">D. 以上三者效果相同</li>
       </ul>
-      <div class="quiz-feedback" id="q1-fb">✅ 正確！收益法透過 DCF 預估未來收益，最能反映 AI IP 的高成長潛力（CAGR &gt; 40%，終值倍數 20–40x EBITDA）。成本法忽略未來收益，在 AI 爆發期常低估價值。</div>
+      <div class="quiz-feedback" id="q1-correct-fb">✅ 正確！收益法透過 DCF 預估未來收益，最能反映 AI IP 的高成長潛力（CAGR &gt; 40%，終值倍數 20–40x EBITDA）。成本法忽略未來收益，在 AI 爆發期常低估價值。</div>
+      <div class="quiz-feedback quiz-wrong-fb" id="q1-wrong-fb">❌ 答錯了！正確答案是 <strong>C. 收益法（Income Approach）</strong>。收益法透過 DCF 模型預估未來現金流，能充分反映 AI IP 的高成長潛力；成本法只看歷史投入，常低估 AI 應用的爆發性價值。</div>
     </div>
 
     <div class="quiz-card" id="q2">
@@ -884,7 +886,8 @@
         <li onclick="answer(this,'q2',false)">C. 觸發 GDPR 違規罰款</li>
         <li onclick="answer(this,'q2',false)">D. 使商標失效</li>
       </ul>
-      <div class="quiz-feedback" id="q2-fb">✅ 正確！GPL（GNU General Public License）具有「病毒式」傳染效果，若開源組件混入商業產品，整個產品可能被要求以 GPL 授權開源，導致商業模式失效。</div>
+      <div class="quiz-feedback" id="q2-correct-fb">✅ 正確！GPL（GNU General Public License）具有「病毒式」傳染效果，若開源組件混入商業產品，整個產品可能被要求以 GPL 授權開源，導致商業模式失效。</div>
+      <div class="quiz-feedback quiz-wrong-fb" id="q2-wrong-fb">❌ 答錯了！正確答案是 <strong>B. 強迫整個商業模型被迫開源，無法專利化</strong>。GPL 的「病毒式」傳染性是企業最大威脅——只要混入一個 GPL 組件，整套商業產品都可能被迫開源，商業模式瞬間失效。</div>
     </div>
 
     <div class="quiz-card" id="q3">
@@ -895,7 +898,8 @@
         <li onclick="answer(this,'q3',true)">C. 建置「雙軌 IP 體系」（美系與中系分離）</li>
         <li onclick="answer(this,'q3',false)">D. 完全依賴 WIPO PCT 統一申請</li>
       </ul>
-      <div class="quiz-feedback" id="q3-fb">✅ 正確！美國 CHIPS Act 與中國《出口管制法》對 AI IP 轉移有相互衝突的限制。台灣企業夾在中間，需建置「雙軌 IP 體系」，將美系與中系 IP 分離管理，避免違規風險。</div>
+      <div class="quiz-feedback" id="q3-correct-fb">✅ 正確！美國 CHIPS Act 與中國《出口管制法》對 AI IP 轉移有相互衝突的限制。台灣企業夾在中間，需建置「雙軌 IP 體系」，將美系與中系 IP 分離管理，避免違規風險。</div>
+      <div class="quiz-feedback quiz-wrong-fb" id="q3-wrong-fb">❌ 答錯了！正確答案是 <strong>C. 建置「雙軌 IP 體系」（美系與中系分離）</strong>。美國 CHIPS Act 與中國《出口管制法》的規定相互衝突，台灣企業必須將兩套體系分開管理，才能同時合規、避免制裁。</div>
     </div>
 
     <div class="quiz-card" id="q4">
@@ -906,7 +910,8 @@
         <li onclick="answer(this,'q4',false)">C. 可自動在全球所有 PCT 締約國取得保護</li>
         <li onclick="answer(this,'q4',false)">D. 免除未來的侵權訴訟風險</li>
       </ul>
-      <div class="quiz-feedback" id="q4-fb">✅ 正確！臨時專利是美國專利制度，允許以較低成本先取得「優先權日」，有 12 個月緩衝期以完善研發再提交正式申請。這對資源有限的新創公司非常實用。</div>
+      <div class="quiz-feedback" id="q4-correct-fb">✅ 正確！臨時專利是美國專利制度，允許以較低成本先取得「優先權日」，有 12 個月緩衝期以完善研發再提交正式申請。這對資源有限的新創公司非常實用。</div>
+      <div class="quiz-feedback quiz-wrong-fb" id="q4-wrong-fb">❌ 答錯了！正確答案是 <strong>B. 以低成本先鎖定「優先權日」，爭取 12 個月緩衝期完善研發</strong>。臨時專利本身不直接授予正式保護，但能以最低成本搶先佔住優先日，讓新創在有限資源下也能保護創新。</div>
     </div>
 
     <div class="quiz-card" id="q5">
@@ -917,7 +922,8 @@
         <li onclick="answer(this,'q5',true)">C. 誰能最好地治理、交易、保護與實現 IP 價值</li>
         <li onclick="answer(this,'q5',false)">D. 誰能最快完成 TIPS A 級驗證</li>
       </ul>
-      <div class="quiz-feedback" id="q5-fb">✅ 正確！作者明確指出：「未來十年，決定勝負的不是誰先發明，而是誰能最好地治理、交易、保護與實現 IP 價值。」這是全文的核心結論。</div>
+      <div class="quiz-feedback" id="q5-correct-fb">✅ 正確！作者明確指出：「未來十年，決定勝負的不是誰先發明，而是誰能最好地治理、交易、保護與實現 IP 價值。」這是全文的核心結論。</div>
+      <div class="quiz-feedback quiz-wrong-fb" id="q5-wrong-fb">❌ 答錯了！正確答案是 <strong>C. 誰能最好地治理、交易、保護與實現 IP 價值</strong>。作者強調：先發明只是起點，真正的競爭力在於能否系統化地管理與變現 IP——這才是 AI 時代的核心護城河。</div>
     </div>
   </section>
 
@@ -941,17 +947,25 @@
   function answer(el, qid, correct) {
     const card = document.getElementById(qid);
     const opts = card.querySelectorAll('.quiz-options li');
-    opts.forEach(o => { o.onclick = null; o.style.cursor = 'default'; });
+
+    // Disable all options (keep attributes intact so we can find the correct one below)
+    opts.forEach(o => { o.style.pointerEvents = 'none'; o.style.cursor = 'default'; });
+
+    // Mark the chosen option
     el.classList.add(correct ? 'correct' : 'wrong');
+
+    // If wrong, also highlight which one was correct
     if (!correct) {
       opts.forEach(o => {
-        if (o.getAttribute('onclick') === null && o !== el) {
-          // find correct one — it has true in onclick before we cleared it
-        }
+        const oc = o.getAttribute('onclick') || '';
+        if (oc.includes(',true)')) o.classList.add('correct');
       });
     }
-    const fb = document.getElementById(qid + '-fb');
-    fb.style.display = 'block';
+
+    // Show the right feedback
+    const fbId = qid + (correct ? '-correct-fb' : '-wrong-fb');
+    const fb = document.getElementById(fbId);
+    if (fb) fb.style.display = 'block';
   }
 </script>
 
