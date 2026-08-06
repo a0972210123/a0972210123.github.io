@@ -14,6 +14,9 @@
   </script>
 </head>
 <body>
-  <script>window.location.href = '/dreamcatcher/';</script>
+  <!-- 原本轉跳到 /dreamcatcher/，但 dreamcatcher repo 已轉為私有、Pages 隨之關閉，
+       那個路徑實測 404，等於把訪客送到死路。捕夢網正式站在 telaaurealab.com。 -->
+  <script>window.location.replace('https://telaaurealab.com/');</script>
+  <noscript><p>前往 <a href="https://telaaurealab.com/">telaaurealab.com</a></p></noscript>
 </body>
 </html>
